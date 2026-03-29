@@ -1,0 +1,8 @@
+{
+    "values": [
+        "asset:artifact/8800.debug_artifact_alpha/give/1.trigger",
+        "asset:artifact/8801.debug_artifact_beta/give/1.trigger",
+        "asset:artifact/8802.debug_artifact_gamma/give/1.trigger",
+        "asset:artifact/8803.debugging_command_manual/give/1.trigger"
+    ]
+}
