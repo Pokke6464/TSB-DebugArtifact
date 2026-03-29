@@ -24,4 +24,4 @@
 # スニーク+下向き：半径50m内の全ての敵に9999.9ダメージ
     execute if predicate lib:is_sneaking unless entity @s[x_rotation=-90..80] run playsound minecraft:block.fire.ambient master @a ~ ~ ~ 1 0.5
     execute if predicate lib:is_sneaking unless entity @s[x_rotation=-90..80] run particle squid_ink ~ ~0.25 ~ 0.5 0 0.5 0.1 10
-    execute if predicate lib:is_sneaking unless entity @s[x_rotation=-90..80] as @e[type=#lib:living,type=!player,tag=!Uninterferable,tag=!ExtendedCollision,distance=..50] run function asset:artifact/8801.debug_artifact_beta/trigger/attack
+    execute if predicate lib:is_sneaking unless entity @s[x_rotation=-90..80] as @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..50] run function asset:artifact/8801.debug_artifact_beta/trigger/attack
