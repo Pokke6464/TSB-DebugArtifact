@@ -5,7 +5,7 @@
 # @within function asset:artifact/8801.debug_artifact_beta/trigger/3.main
 
 # 既に限界突破しているか否かで鳴らす音を変える
-    execute if score $Difficulty Global matches ..3 run playsound minecraft:item.totem.use player @a ~ ~ ~ 1 1.25
+    execute if score $Difficulty Global matches ..3 run playsound minecraft:item.totem.use player @a ~ ~ ~ 0.7 1.25
     execute if score $Difficulty Global matches 4.. run playsound entity.blaze.shoot player @a ~ ~ ~ 1 0.6
     execute if score $Difficulty Global matches 4.. run playsound entity.blaze.shoot player @a ~ ~ ~ 1 0.7
 
