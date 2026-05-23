@@ -4,12 +4,12 @@
 #
 # @within function asset:artifact/8800.debug_artifact_alpha/trigger/3.main
 
+# 演出
+    playsound ogg:random.levelup player @a ~ ~ ~ 0.8 2
+    particle happy_villager ~ ~0.75 ~ 0.5 0.7 0.5 0 30
+
 # HPを回復
     data modify storage api: Argument.Heal set value 9999.9f
     data modify storage api: Argument.FixedHeal set value true
     function api:heal/
     function api:heal/reset
-
-# 演出
-    playsound ogg:random.levelup player @a ~ ~ ~ 0.8 2
-    particle happy_villager ~ ~0.75 ~ 0.5 0.7 0.5 0 30
