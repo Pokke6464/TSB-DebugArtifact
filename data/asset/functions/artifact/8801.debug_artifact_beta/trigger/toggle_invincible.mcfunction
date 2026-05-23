@@ -10,6 +10,6 @@
     execute if data entity @s active_effects[{id:"minecraft:resistance",amplifier:9b}] run return run effect clear @s resistance
 
 # 無敵が付与されていないなら無敵化
-    playsound block.anvil.place player @a ~ ~ ~ 1 1.5
+    playsound block.anvil.place player @a ~ ~ ~ 0.7 1.5
     particle electric_spark ~ ~0.75 ~ 0.5 0.7 0.5 1 30
     effect give @s resistance infinite 9 true

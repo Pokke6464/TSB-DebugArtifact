@@ -11,5 +11,5 @@
     function api:heal/reset
 
 # 演出
-    playsound ogg:random.levelup player @a ~ ~ ~ 1 2
+    playsound ogg:random.levelup player @a ~ ~ ~ 0.8 2
     particle happy_villager ~ ~0.75 ~ 0.5 0.7 0.5 0 30
