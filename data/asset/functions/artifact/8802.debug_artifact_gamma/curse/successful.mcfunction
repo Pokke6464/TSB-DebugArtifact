@@ -26,5 +26,8 @@
     function debug:entity_storage/merge.m {Path:"IslandData",Data:"{DispelPhase:0b}"}
     tag @s remove DispelledCursedArtifact
 
+# 近くにエンドからの帰還ポータルがあれば消去
+    kill @e[type=marker,tag=BetaEndingPortal,distance=..10,sort=nearest,limit=1]
+
 # リセット
     data remove storage lib: Temp
