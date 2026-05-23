@@ -20,5 +20,5 @@
     tellraw @a {"text":""}
     tellraw @a {"text":"神器の見た目はこれが正常です。","color":"white"}
     tellraw @a {"text":""}
-    tellraw @a {"text":"Ver 1.3.0","color":"white","bold":true}
+    tellraw @a {"text":"Ver 1.3.1","color":"white","bold":true}
     tellraw @a {"text":"　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　","color":"white","strikethrough":true}
