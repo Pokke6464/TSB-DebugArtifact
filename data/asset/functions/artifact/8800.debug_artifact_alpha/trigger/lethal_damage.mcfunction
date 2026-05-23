@@ -15,7 +15,7 @@
     execute store result storage api: Argument.Damage double 1 run scoreboard players remove @s Temporary 1
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
-    # data modify storage api: Argument.FixedDamage set value 1b
+    data modify storage api: Argument.FixedDamage set value 1b
     function api:damage/modifier
     execute if entity @s[tag=!PlayerShouldInvulnerable] run function api:damage/
     function api:damage/reset
