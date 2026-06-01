@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"滅虫器 ","color":"white","bold":true},{"text":"[β]","color":"aqua","bold":false}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"「虫」と呼ばれる何かを滅するために作られた2つ目の神器。"}','{"text":"体勢や自身の向きで使用時の効果が変わる。"}','{"text":" 直立：難易度を変更する"}','{"text":" 直立+下向き：難易度を限界突破させる(連続使用可能)"}','{"text":" 直立+上向き：信仰を変更する"}','{"text":" スニーク：無敵化の付与/解除"}','{"text":" スニーク+下向き：半径50m内の全ての敵に9999.9ダメージを与える"}','{"text":"これを使って島を楽に攻略しようとするのはやめましょう。","color":"gray"}',]
+    data modify storage asset:artifact Lore set value ['{"text":"「虫」と呼ばれる何かを滅するために作られた2つ目の神器。"}','{"text":"体勢や自身の向き、使い方で効果が変わる。"}','{"text":" 直立：難易度を変更する"}','{"text":" 直立+下向き：難易度を限界突破させる(連続使用可能)"}','{"text":" 直立+上向き：信仰を変更する"}','{"text":" スニーク：無敵化の付与/解除"}','{"text":" スニーク+下向き：半径50m内の全ての敵に9999.9ダメージを与える"}','{"text":" 近接攻撃：攻撃した対象を消滅させる"}','{"text":"これを使って島を楽に攻略しようとするのはやめましょう。","color":"gray"}',]
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -23,7 +23,7 @@
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照
-    data modify storage asset:artifact Slot set value "auto"
+    data modify storage asset:artifact Slot set value "mainhand"
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "onClick"
 # 神器の発動条件 (TextComponentString) (オプション)
