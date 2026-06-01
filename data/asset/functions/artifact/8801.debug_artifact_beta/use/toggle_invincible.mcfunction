@@ -1,8 +1,8 @@
-#> asset:artifact/8801.debug_artifact_beta/trigger/toggle_invincible
+#> asset:artifact/8801.debug_artifact_beta/use/toggle_invincible
 #
 # 神器のメイン処理部
 #
-# @within function asset:artifact/8801.debug_artifact_beta/trigger/3.main
+# @within function asset:artifact/8801.debug_artifact_beta/use/3.main
 
 # 無敵が付与されているなら解除
     execute if data entity @s active_effects[{id:"minecraft:resistance",amplifier:9b}] run playsound disabled_sounds:item.armor.equip_leather player @a ~ ~ ~ 1 1

@@ -1,8 +1,8 @@
-#> asset:artifact/8801.debug_artifact_beta/trigger/change_believe
+#> asset:artifact/8801.debug_artifact_beta/use/change_believe
 #
 # 神器のメイン処理部
 #
-# @within function asset:artifact/8801.debug_artifact_beta/trigger/3.main
+# @within function asset:artifact/8801.debug_artifact_beta/use/3.main
 
 # 変更後の信仰を表示
     execute if entity @s[tag=Believe.None] run tellraw @s [{"text":"信仰を ","color":"white"},{"text":"\uE000","font":"icon"},{"text":"フローラ","color":"white","bold":true},{"text":" に変更しました。","color":"white"}]

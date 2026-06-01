@@ -1,8 +1,8 @@
-#> asset:artifact/8801.debug_artifact_beta/trigger/change_difficulty
+#> asset:artifact/8801.debug_artifact_beta/use/change_difficulty
 #
 # 神器のメイン処理部
 #
-# @within function asset:artifact/8801.debug_artifact_beta/trigger/3.main
+# @within function asset:artifact/8801.debug_artifact_beta/use/3.main
 
 # 難易度を変更
     scoreboard players add $Difficulty Global 1

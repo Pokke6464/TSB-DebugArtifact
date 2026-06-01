@@ -1,8 +1,8 @@
-#> asset:artifact/8801.debug_artifact_beta/trigger/over_difficulty
+#> asset:artifact/8801.debug_artifact_beta/use/over_difficulty
 #
 # 神器のメイン処理部
 #
-# @within function asset:artifact/8801.debug_artifact_beta/trigger/3.main
+# @within function asset:artifact/8801.debug_artifact_beta/use/3.main
 
 # 既に限界突破しているか否かで鳴らす音を変える
     execute if score $Difficulty Global matches ..3 run playsound minecraft:item.totem.use player @a ~ ~ ~ 0.7 1.25

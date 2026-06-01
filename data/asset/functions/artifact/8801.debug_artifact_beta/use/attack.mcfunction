@@ -1,8 +1,8 @@
-#> asset:artifact/8801.debug_artifact_beta/trigger/attack
+#> asset:artifact/8801.debug_artifact_beta/use/attack
 #
 # 神器のメイン処理部
 #
-# @within function asset:artifact/8801.debug_artifact_beta/trigger/3.main
+# @within function asset:artifact/8801.debug_artifact_beta/use/3.main
 
 # 演出
     playsound block.fire.ambient player @a ~ ~ ~ 1 0.5
