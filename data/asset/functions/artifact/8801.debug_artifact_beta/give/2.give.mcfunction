@@ -58,7 +58,7 @@
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value "ALL"
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    data modify storage asset:artifact CustomNBT set value {Enchantments:[{}]}
+    data modify storage asset:artifact CustomNBT set value {HideFlags:1, Enchantments:[{id:"binding_curse",lvl:1}]}
 
 # 神器の入手用function
     function asset:artifact/common/give
