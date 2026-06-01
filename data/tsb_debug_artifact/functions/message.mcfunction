@@ -4,7 +4,7 @@
 #
 # @within function 
 #   tsb_debug_artifact:first_join
-#   tsb_debug_artifact:version_update/update
+#   tsb_debug_artifact:version_update/common
 
 # メッセージ
     tellraw @a {"text":"　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　","color":"white","strikethrough":true}

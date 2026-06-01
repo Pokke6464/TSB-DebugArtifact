@@ -7,6 +7,8 @@
 # このfunctionを二度と実行されないようにする 
     data modify storage tsb_debug_artifact: FirstJoin set value true
 
-# 1秒後にデバッグ用神器を与える&メッセージを表示
-    schedule function tsb_debug_artifact:give 20t replace
-    schedule function tsb_debug_artifact:message 20t replace
+# デバッグ用神器を与える
+    execute as @a at @s run function tsb_debug_artifact:give
+
+# メッセージを表示
+    function tsb_debug_artifact:message
