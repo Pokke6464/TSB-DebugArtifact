@@ -1,6 +1,6 @@
 #> asset:artifact/8802.debug_artifact_gamma/curse/successful
 #
-# 神器のメイン処理部
+#
 #
 # @within function asset:artifact/8802.debug_artifact_gamma/curse/3.main
 
@@ -23,7 +23,8 @@
     title @a subtitle {"text":"","bold":false,"extra":[{"text":"PROGRESS ","color":"aqua"},{"score":{"name":"$PurifiedIslands","objective":"Global"},"color":"white"},{"text":"\u0002","font":"space"},{"text":"/","color":"gray"},{"text":"\u0002","font":"space"},{"score":{"name":"$TotalIslands","objective":"Global"},"color":"white"},{"text":"\u0002","font":"space"},{"text":"("},{"storage":"lib:","nbt":"Temp.Progress"},{"text":"%)"}]}
 
 # 再び祈れるようにする
-    function debug:entity_storage/merge.m {Path:"IslandData",Data:"{DispelPhase:0b}"}
+    function oh_my_dat:please
+    data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].IslandData.DispelPhase set value 0b
     tag @s remove DispelledCursedArtifact
 
 # 祝福を手に入らないようにする
@@ -31,6 +32,12 @@
 
 # 近くにエンドからの帰還ポータルがあれば消去
     kill @e[type=marker,tag=BetaEndingPortal,distance=..10,sort=nearest,limit=1]
+
+# シャード解禁状況のスコアを更新
+    function asset_manager:island/dispel/update_unlocked_shard_lv/
+
+# 商人の取引内容を更新する
+    function api:trader/schedule_recipe_update_check
 
 # リセット
     data remove storage lib: Temp
