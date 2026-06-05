@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"滅虫器 ","color":"white","bold":true},{"text":"[α]","color":"red","bold":false}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"「虫」と呼ばれる何かを滅するために作られた1つ目の神器。"}','{"text":"体勢や自身の向きで使用時の効果が変わる。"}','{"text":" 直立：MPを9999回復"}','{"text":" 直立+下向き：MPを9999消費"}','{"text":" スニーク：HPを9999.9回復"}','{"text":" スニーク+下向き：自身のHPを瀕死まで減らす"}','{"text":" スニーク+上向き：開発特権の取得/剝奪"}','{"text":"見た目が人参の付いた釣り竿なのは一体なぜなのだろうか？","color":"gray"}',]
+    data modify storage asset:artifact Lore set value ['{"text":"「虫」と呼ばれる何かを滅するために作られた1つ目の神器。"}','{"text":"体勢や自身の向きで使用時の効果が変わる。"}','{"text":" 直立：MPを9999回復"}','{"text":" 直立+下向き：MPを9999消費"}','{"text":" 直立+上向き：信仰する神を変更"}','{"text":" スニーク：HPを9999.9回復"}','{"text":" スニーク+下向き：自身のHPを瀕死まで減らす"}','{"text":" スニーク+上向き：開発特権の取得/剝奪"}','{"text":"見た目が人参の付いた釣り竿なのは一体なぜなのだろうか？","color":"gray"}',]
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value

@@ -10,16 +10,19 @@
 # ここから先は神器側の効果の処理を書く
 
 # 直立：MPを9999回復
-    execute unless predicate lib:is_sneaking if entity @s[x_rotation=-90..80] run function asset:artifact/8800.debug_artifact_alpha/trigger/mp_recovery
+    execute unless predicate lib:is_sneaking if entity @s[x_rotation=-80..80] run function asset:artifact/8800.debug_artifact_alpha/trigger/mp_recovery
 
 # 直立+下向き：MPを9999消費
     execute unless predicate lib:is_sneaking unless entity @s[x_rotation=-90..80] run function asset:artifact/8800.debug_artifact_alpha/trigger/mp_reduce
 
+# 直立+上向き：信仰する神を変更
+    execute unless predicate lib:is_sneaking unless entity @s[x_rotation=-80..90] run function asset:artifact/8800.debug_artifact_alpha/trigger/change_believe
+
 # スニーク：HPを9999.9回復
     execute if predicate lib:is_sneaking if entity @s[x_rotation=-80..80] run function asset:artifact/8800.debug_artifact_alpha/trigger/heal
 
-# スニーク+下向き：自身のHPを2にする
+# スニーク+下向き：自身のHPを瀕死まで減らす
     execute if predicate lib:is_sneaking unless entity @s[x_rotation=-90..80] run function asset:artifact/8800.debug_artifact_alpha/trigger/lethal_damage
 
-# スニーク+上向き：開発特権の切り替え
+# スニーク+上向き：開発特権の取得/剥奪
     execute if predicate lib:is_sneaking unless entity @s[x_rotation=-80..90] run function asset:artifact/8800.debug_artifact_alpha/trigger/toggle_dev_privilege
