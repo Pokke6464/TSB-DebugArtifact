@@ -4,6 +4,9 @@
 #
 # @within function asset_manager:island/dispel/
 
+# エイプリルフールVerなら別functionで処理
+    execute if data storage global {GameVersion:"v1.0.6-afd26sheep"} run return run function asset_manager:island/dispel/successful_afd26sheep
+
 # 邪魔なスコアをリセットする
     scoreboard players reset @s DispelTime
 # 解呪数を1増やす
