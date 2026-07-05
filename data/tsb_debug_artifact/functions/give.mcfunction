@@ -11,5 +11,7 @@
     function api:artifact/give/from_id
     data modify storage api: Argument.ID set value 8802
     function api:artifact/give/from_id
+    data modify storage api: Argument.ID set value 8804
+    function api:artifact/give/from_id
     data modify storage api: Argument.ID set value 8803
     function api:artifact/give/from_id
