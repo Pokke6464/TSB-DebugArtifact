@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"滅虫器 ","color":"white","bold":true},{"text":"[γ]","color":"yellow","bold":false}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"「虫」と呼ばれる何かを滅するために作られた3つ目の神器。"}','{"text":"スニークをし続けることで、近くの浄化済みの呪われた神器を再び呪う。"}','{"text":"この時かつて天使がいた場合は復活させ、再戦することができる。"}','{"text":"これはもはや神々への冒涜なのでは？","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"「虫」と呼ばれる何かを滅するために作られた3つ目の神器。"}','{"text":"スニークをし続けることで、近くの浄化済みの呪われた神器を再び呪う。"}','{"text":"この時かつて天使がいた場合は復活させ、再戦することができる。"}','{"text":"なぜか、オフハンドに持つと空腹度が減っていく効果もある。"}','{"text":"これはもはや神々への冒涜なのでは？","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
