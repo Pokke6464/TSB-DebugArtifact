@@ -16,5 +16,5 @@
 # 変更後の難易度を表示 / []の中には(難易度値 - 3)した値を表示
     scoreboard players operation $Difficulty Temporary = $Difficulty Global
     scoreboard players operation $Difficulty Temporary -= $3 Const
-    tellraw @a [{"text":"難易度を ","color":"white"},{"text":"OverDifficulty[","color":"dark_red","bold":true},{"score":{"name":"$Difficulty","objective":"Temporary"},"color":"dark_red","bold":true},{"text":"]","color":"dark_red","bold":true},{"text":" に変更しました。"},{"text":"(難易度値: ","color":"gray","bold":false},{"score":{"name":"$Difficulty","objective":"Global"},"color":"gray"},{"text":")","color":"gray"}]
+    tellraw @a [{"text":"難易度を ","color":"white"},{"translate":"OverDifficulty[%1$s]","color":"dark_red","bold":true, "with":[{"score":{"name":"$Difficulty","objective":"Temporary"},"color":"white","bold":true}]},{"text":" に変更しました。","color":"white","bold":false},{"translate":"(難易度値: %1$s)","color":"gray","bold":false, "with":[{"score":{"name":"$Difficulty","objective":"Global"}}]}]
     scoreboard players reset $Difficulty Temporary
