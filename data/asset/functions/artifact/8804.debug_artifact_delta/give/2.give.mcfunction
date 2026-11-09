@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"滅虫器 ","color":"white","bold":true},{"text":"[δ]","color":"green","bold":false}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"「虫」と呼ばれる何かを滅するために作られた4つ目の神器。"}','{"text":"周囲100m内のエンティティの位置にパーティクルを表示し続ける。"}','{"text":"スニークすることでより目立つパーティクルにすることができる。"}','{"text":"また、最も近い対象のタグなどを表示する機能もある。"}','{"text":"非スニーク時のパーティクルの色は対象の種類によって以下のようになる。"}','{"translate":" %1$s：マーカー","with":[{"text":"赤","color":"red"}]}','{"translate":" %1$s：防具立て / display系エンティティ / エリアエフェクトクラウド","with":[{"text":"黄","color":"yellow"}]}','{"translate":" %1$s：その他","with":[{"text":"緑","color":"green"}]}','{"text":"うわ、なんかエンティティ残ってる...","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"「虫」と呼ばれる何かを滅するために作られた4つ目の神器。"}','{"text":"周囲100m内のエンティティの位置にパーティクルを表示し続ける。"}','{"text":"スニークすることでより目立つパーティクルに変化する。"}','{"text":"また、最も近い対象のタグ、ObjectのIDを表示する機能もある。"}','{"text":"非スニーク時のパーティクルの色は対象の種類によって以下のようになる。"}','{"translate":" %1$s：マーカー","with":[{"text":"赤","color":"red"}]}','{"translate":" %1$s：防具立て / display系エンティティ / エリアエフェクトクラウド","with":[{"text":"黄","color":"yellow"}]}','{"translate":" %1$s：その他","with":[{"text":"緑","color":"green"}]}','{"text":"うわ、なんかエンティティ残ってる...","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
